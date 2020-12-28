@@ -63,8 +63,17 @@ p {
   position:relative;
   height:20vh;
   text-align:center;
-  background-color: white;
+  background-color: red;
 }
+
+.content2 {
+      max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+
+
 
 /* Animation */
 
@@ -108,6 +117,156 @@ p {
     font-size:24px;
   }
 }
+  body {
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    color: #fff;
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .showcase::after {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://github.com/said0209/Img_of_page/blob/master/light-3121618_1920.jpg?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+  }
+
+  .showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+
+  .showcase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+  }
+
+  .content .logo {
+    height: 180px;
+    width: 180px;
+  }
+
+  .content .title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+
+  .content .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+
+  .bg-light {
+    background: white;
+    color: #333;
+  }
+
+  .bg-dark {
+    background: white;
+    color: #333;
+  }
+
+  footer {
+    padding: 2.2rem;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  /* Small Screens */
+  @media (max-width: 560px) {
+    .showcase::after {
+      height: 50vh;
+    }
+
+    .content {
+      top: 5%;
+      margin-top: 5px;
+    }
+
+    .content .logo {
+      height: 140px;
+      width: 140px;
+    }
+
+    .content .text {
+      display: none;
+    }
+
+    .grid-3,
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+
+    .services div {
+      border-bottom: #333 dashed 1px;
+      padding: 1.2rem 1rem;
+    }
+  }
+
+  /* Landscape */
+  @media (max-height: 500px) {
+    .content .title,
+    .content .text {
+      display: none;
+    }
+
+    .content {
+      top: 0;
+    }
+  }
+  a{
+    color: #333;
+    text-decoration: none;
+  }
+  .men{
+    color:#fff;
+  }
 	</style>
 </head>
 <body>
@@ -118,7 +277,10 @@ of Simple CSS Waves-->
 
 <!--Content before waves-->
 <div class="inner-header flex">
-<!--Just the logo.. Don't mind this-->
+
+<img src="https://github.com/said0209/Img_of_page/blob/master/stars.png?raw=true" class="logo" alt="Dubhe">
+
+<!--
 <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
 <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
@@ -128,7 +290,9 @@ C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1
 c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7    c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2  c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
 </g>
 </svg>
-<h1>Simple CSS Waves</h1>
+-->
+
+<h1>Proyectos</h1>
 </div>
 
 <!--Waves Container-->
@@ -152,10 +316,38 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 <!--Header ends-->
 
 <!--Content starts-->
-<div class="content flex">
-<p>Daniel Österman | 2019 | Free to use</p>
-</div>
+
+
+ <section class="about bg-light">
+   <div class="container">
+     <div class="grid-2">
+       <div class="center">
+         <i class="fas fa-laptop-code fa-10x"></i>
+       </div>
+       <div>
+         <h3>Algoritmo de Dijkstra</h3>
+         <p>Proyecto aplicado a la busqueda y optimización de una ruta aérea internacional. Su desarrollo ha finalizado, puede observar la presentación y el código en el repositorio.</p>
+         <p>Artículo: Lectura.</p>
+         <p>Presentación: <a href="AlgoritmoDijkstraV9.html"> AlgoritmoDijkstraV9.</p></a>
+       </div>
+        
+       <div>
+         <h3>About Us</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
+           similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur consequatur non
+           nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.</p>
+       </div>
+        
+     </div>
+   </div>
+ </section>
+
+
 <!--Content ends-->
+<footer class="center bg-dark">
+   <p>&hearts; by <a style="text-decoration:none" href="https://github.com/said0209" target="_blank">Said</a> </p>
+ </footer>
+
 
 </body>
 </html>
