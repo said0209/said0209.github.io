@@ -1,223 +1,200 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Dubhe</title>
-  <style>
-  body {
-    background: rgba(0, 0, 0, 0.9);
-    margin: 0;
-    color: #fff;
-    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
-  }
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  .showcase::after {
-    content: "";
-    height: 100vh;
-    width: 100%;
-    background-image: url(https://github.com/said0209/Img_of_page/blob/master/light-3121618_1920.jpg?raw=true);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    transition: all 1000ms;
-  }
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-  .showcase:hover::after {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  .showcase:hover .content {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-  }
+        <title>STJ</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Street Space</a>
+                </div>
 
-  .content {
-    position: absolute;
-    z-index: 1;
-    top: 10%;
-    left: 50%;
-    margin-top: 105px;
-    margin-left: -145px;
-    width: 300px;
-    height: 350px;
-    text-align: center;
-    transition: all 1000ms;
-  }
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Proyectos</a></li>
+                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li> -->
+                    </ul>
+                </div>
 
-  .content .logo {
-    height: 180px;
-    width: 180px;
-  }
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-  .content .title {
-    font-size: 2.2rem;
-    margin-top: 1rem;
-  }
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hola,<br>Yo soy <span class="home__title-color">Said</span><br> Tecpa Juárez</h1>
 
-  .content .text {
-    line-height: 1.7;
-    margin-top: 1rem;
-  }
+                    <!-- <a href="#" class="button">Contacto</a> -->
+                </div>
 
-  .container {
-    max-width: 960px;
-    margin: auto;
-    overflow: hidden;
-    padding: 4rem 1rem;
-  }
+                <div class="home__social">
+                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a> -->
+                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-twitter' ></i></a> -->
+                    <a href="https://github.com/said0209" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
 
-  .grid-3 {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-  }
+                <div class="home__img">    
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+            </section>
 
-  .grid-2 {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-  }
+            <!--
+            ===== ABOUT =====
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-  .center {
-    text-align: center;
-    margin: auto;
-  }
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Marlon</h2>
+                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                    </div>                                   
+                </div>
+            </section>
+            -->
 
-  .bg-light {
-    background: #f4f4f4;
-    color: #333;
-  }
+            <!--===== SKILLS =====
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-  .bg-dark {
-    background: #f4f4f4;
-    color: #333;
-  }
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
 
-  footer {
-    padding: 2.2rem;
-  }
+                            </div>
+                            <div>
+                                <span class="skills__percentage">35%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">25%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">15%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Markdown</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+            -->
 
-  footer p {
-    margin: 0;
-  }
 
-  /* Small Screens */
-  @media (max-width: 560px) {
-    .showcase::after {
-      height: 50vh;
-    }
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Proyectos</h2>
 
-    .content {
-      top: 5%;
-      margin-top: 5px;
-    }
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
 
-    .content .logo {
-      height: 140px;
-      width: 140px;
-    }
+            <!--===== CONTACT =====
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contacto</h2>
 
-    .content .text {
-      display: none;
-    }
-
-    .grid-3,
-    .grid-2 {
-      grid-template-columns: 1fr;
-    }
-
-    .services div {
-      border-bottom: #333 dashed 1px;
-      padding: 1.2rem 1rem;
-    }
-  }
-
-  /* Landscape */
-  @media (max-height: 500px) {
-    .content .title,
-    .content .text {
-      display: none;
-    }
-
-    .content {
-      top: 0;
-    }
-  }
-  a{
-    color: #333;
-    text-decoration: none;
-  }
-  .men{
-    color:#fff;
-  }
-  </style>
-</head>
-<body>
-  <header class="showcase">
-   <div class="content">
-     <img src="https://github.com/said0209/Img_of_page/blob/master/stars.png?raw=true" class="logo" alt="Dubhe">
-     <div class="title">
-      Proyectos
-     </div>
-     <div class="text">
-        "Siempre puedes editar una página incorrecta, pero no una página en blanco." <br> Jodi Picoult.
-     </div>
-   </div>
- </header>
-
- <!-- Services -->
- <!-- # En está nueva versión se ha limpiado la parte de los servicios, dando una perspectiva más simple. Se puede volver a utulizar está parte, ya que solo se ha cancelado con volviendolo un comentario y en la parte de CSS es en el apartado Grid 3#
- <section class="services">
-   <div class="container grid-3 center">
-     <div>
-       <i class="fab fa-youtube fa-3x"></i>
-       <h3>Page Open Source</h3>
-       <p>Esta página tiene código html y css; es un proyecto de código abierto.</p>
-     </div>
-     <div>
-       <i class="fas fa-chalkboard-teacher fa-3x"></i>
-       <a class="men" href="https://twitter.com/SaidTecpaJuarez"><h3>Sobre mí</h3></a>
-       <p>¿Quién soy? y ¿A donde voy?</p>
-     </div>
-     <div>
-       <i class="fas fa-briefcase fa-3x"></i>
-       <h3>Proyectos independientes</h3>
-       <p>Proyectos inconclusos.</p>
-     </div>
-   </div>
- </section>
--->
- <!-- About -->
- <section class="about bg-light">
-   <div class="container">
-     <div class="grid-2">
-       <div class="center">
-         <i class="fas fa-laptop-code fa-10x"></i>
-       </div>
-       <div>
-         <h3>Algoritmo de Dijkstra</h3>
-         <p>Proyecto aplicado a la busqueda y optimización de una ruta aérea internacional. Su desarrollo ha finalizado, puede observar la presentación y el código en el repositorio.</p>
-         <p>Artículo: Lectura.</p>
-         <p>Presentación: <a href="AlgoritmoDijkstraV9.html"> AlgoritmoDijkstraV9.</p></a>
-       </div>
-       <!-- 
-       <div>
-         <h3>About Us</h3>
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
-           similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur consequatur non
-           nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.</p>
-       </div>
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
         -->
-     </div>
-   </div>
- </section>
 
- <footer class="center bg-dark">
-   <p>&hearts; by <a style="text-decoration:none" href="https://github.com/said0209" target="_blank">Said</a> </p>
- </footer>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+           <!-- <p class="footer__title">Said</p> -->
+            <div class="footer__social">
+                <!-- <a href="https://www.facebook.com/said.tecpa.5" target="_blank" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/said.t.j.4/" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a> -->
+               <!-- <a href="https://twitter.com/TecpaJuarezSaid" target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a> -->
+            </div>
+            <p> 2&hearts;21 </p>
+        </footer>
 
-</body>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
