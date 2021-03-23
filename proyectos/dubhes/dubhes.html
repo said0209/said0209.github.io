@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DubheS</title>
+  <style>
+  body {
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    color: #fff;
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .showcase::after {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://1.bp.blogspot.com/-PaYTLzCrfTo/YFk3Eor2hOI/AAAAAAAAAAk/32YIihewN3Iq1_mpMO4Q32PwY3yYKlfAwCNcBGAsYHQ/s1920/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+  }
+
+  .showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+
+  .showcase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+  }
+
+  .content .logo {
+    height: 180px;
+    width: 180px;
+  }
+
+  .content .title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+
+  .content .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+
+  .bg-light {
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  .bg-dark {
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  footer {
+    padding: 2.2rem;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  /* Small Screens */
+  @media (max-width: 560px) {
+    .showcase::after {
+      height: 50vh;
+    }
+
+    .content {
+      top: 5%;
+      margin-top: 5px;
+    }
+
+    .content .logo {
+      height: 140px;
+      width: 140px;
+    }
+
+    .content .text {
+      display: none;
+    }
+
+    .grid-3,
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+
+    .services div {
+      border-bottom: #333 dashed 1px;
+      padding: 1.2rem 1rem;
+    }
+  }
+
+  /* Landscape */
+  @media (max-height: 500px) {
+    .content .title,
+    .content .text {
+      display: none;
+    }
+
+    .content {
+      top: 0;
+    }
+  }
+  a{
+    color: #333;
+    text-decoration: none;
+  }
+  .men{
+    color:#fff;
+  }
+  </style>
+</head>
+<body>
+  <header class="showcase">
+   <div class="content">
+     <img src="https://1.bp.blogspot.com/-k7o_t9MQdGs/YFk2aQopkzI/AAAAAAAAAAc/3eQOFxmXLe0ecrd3VsmuGyRiCcC8XfhIwCNcBGAsYHQ/s501/stars%2528logo%2529.png" class="logo" alt="Dubhe">
+     <div class="title">
+      DubheS
+     </div>
+     <div class="text">
+        "Siempre puedes editar una página incorrecta, pero no una página en blanco." <br> Jodi Picoult.
+     </div>
+   </div>
+ </header>
+
+ <!-- Services -->
+ <!-- # En está nueva versión se ha limpiado la parte de los servicios, dando una perspectiva más simple. Se puede volver a utulizar está parte, ya que solo se ha cancelado con volviendolo un comentario y en la parte de CSS es en el apartado Grid 3#
+ <section class="services">
+   <div class="container grid-3 center">
+     <div>
+       <i class="fab fa-youtube fa-3x"></i>
+       <h3>Page Open Source</h3>
+       <p>Esta página tiene código html y css; es un proyecto de código abierto.</p>
+     </div>
+     <div>
+       <i class="fas fa-chalkboard-teacher fa-3x"></i>
+       <a class="men" href="https://twitter.com/SaidTecpaJuarez"><h3>Sobre mí</h3></a>
+       <p>¿Quién soy? y ¿A donde voy?</p>
+     </div>
+     <div>
+       <i class="fas fa-briefcase fa-3x"></i>
+       <h3>Proyectos independientes</h3>
+       <p>Proyectos inconclusos.</p>
+     </div>
+   </div>
+ </section>
+-->
+ <!-- About -->
+ <section class="about bg-light">
+   <div class="container">
+     <div class="grid-2">
+       <div class="center">
+         <i class="fas fa-laptop-code fa-10x"></i>
+       </div>
+       <div>
+         <h3>Algoritmo de Dijkstra</h3>
+         <p>Proyecto aplicado a la busqueda y optimización de una ruta aérea internacional. Su desarrollo ha finalizado, puede observar la presentación y el código en el repositorio.</p>
+         <p>Artículo: Lectura.</p>
+         <p>Presentación: <a href="AlgoritmoDijkstraV9.html"> AlgoritmoDijkstraV9.</p></a>
+       </div>
+       <!-- 
+       <div>
+         <h3>About Us</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
+           similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur consequatur non
+           nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.</p>
+       </div>
+        -->
+     </div>
+   </div>
+ </section>
+
+ <footer class="center bg-dark">
+   <p>&hearts; by <a style="text-decoration:none" href="https://said0209.github.io/">Said</a> </p>
+ </footer>
+
+</body>
+</html>
